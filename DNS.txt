@@ -1,0 +1,28 @@
+$TTL 3600
+@	IN SOA dns104.ovh.net. tech.ovh.net. (2022060103 86400 3600 3600000 60)
+                                          IN NS     ns104.ovh.net.
+                                          IN NS     dns104.ovh.net.
+                                          IN MX     100 mx3.mail.ovh.net.
+                                          IN MX     5 mx2.mail.ovh.net.
+                                          IN MX     1 mx1.mail.ovh.net.
+                                          IN A      91.134.128.90
+                                          IN TXT    "v=spf1 include:mx.ovh.com ip4:54.38.35.112 -all"
+                                          IN TXT    "1|www.savelifedata.com"
+1653398016.savelifedata._domainkey        IN TXT    "v=DKIM1;k=rsa;t=s;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4stHQICo9KyHe4DYAKXFuJl3MafRX78LRR2LKfYK5jB/FhmOMY3XERylhisA4A2b+eoPYs3QV5px1CKd+Rv/9+m6wZEODIJkgthY+oxDcD5VUfGeoZOVZxpJ6T23RjbEaeywl2JeLfEs0lLR43TVxiChLgswN+0DJqPcK3X61VwIDAQAB"
+_autodiscover._tcp                        IN SRV    0 0 443 mailconfig.ovh.net.
+_dmarc                                    IN TXT    "v=DMARC1; p=none; rua=mailto:contact@savelifedata.com"
+_imaps._tcp                               IN SRV    0 0 993 ssl0.ovh.net.
+_submission._tcp                          IN SRV    0 0 465 ssl0.ovh.net.
+autoconfig                                IN CNAME  mailconfig.ovh.net.
+autodiscover                              IN CNAME  mailconfig.ovh.net.
+ftp                                       IN CNAME  savelifedata.com.
+imap                                      IN CNAME  ssl0.ovh.net.
+mail                                      IN CNAME  ssl0.ovh.net.
+ns1                                       IN A      54.38.35.112
+pop3                                      IN CNAME  ssl0.ovh.net.
+smtp                                      IN CNAME  ssl0.ovh.net.
+www                                       IN MX     100 mx3.mail.ovh.net.
+www                                       IN MX     5 mx2.mail.ovh.net.
+www                                       IN MX     1 mx1.mail.ovh.net.
+www                                       IN A      91.134.128.90
+www                                       IN TXT    "3|welcome"
